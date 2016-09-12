@@ -73,20 +73,20 @@ var AolAdapter = function AolAdapter() {
     // clean up--we no longer need to store the bid
     delete bidsMap[context.alias];
 
-    var bidResponse = bidfactory.createBid(1);
+    var bidResp = bidfactory.createBid(1);
     var ad = response.getCreative();
     if (typeof response.getPixels() !== 'undefined') {
       ad += response.getPixels();
     }
-    bidResponse.bidderCode = ADTECH_BIDDER_NAME;
-    bidResponse.ad = ad;
-    bidResponse.cpm = cpm;
-    bidResponse.width = response.getAdWidth();
-    bidResponse.height = response.getAdHeight();
-    bidResponse.creativeId = response.getCreativeId();
+    bidResp.bidderCode = ADTECH_BIDDER_NAME;
+    bidResp.ad = ad;
+    bidResp.cpm = cpm;
+    bidResp.width = response.getAdWidth();
+    bidResp.height = response.getAdHeight();
+    bidResp.creativeId = response.getCreativeId();
 
     // add it to the bid manager
-    bidmanager.addBidResponse(bid.placementCode, bidResponse);
+    bidmanager.addBidResponse(bid.placementCode, bidResp);
   }
 
   /**
