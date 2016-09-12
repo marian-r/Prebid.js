@@ -33,11 +33,12 @@ var AolAdapter = function AolAdapter() {
   var dummyUnitIdCount = 0;
 
   /**
-   * @private create a div that we'll use as the
+   * @private 
+   * create a div that we'll use as the
    * location for the AOL unit; AOL will document.write
    * if the div is not present in the document.
-   * @param {String} id to identify the div
-   * @return {String} the id used with the div
+   * @param {string} id to identify the div
+   * @return {string} the id used with the div
    */
   function _dummyUnit(id) {
     var div = d.createElement('DIV');
@@ -52,7 +53,9 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @private Add a succesful bid response for aol
+   * @private
+   * Add a succesful bid response for aol
+   * 
    * @param {ADTECHResponse} response the response for the bid
    * @param {ADTECHContext} context the context passed from aol
    */
@@ -89,7 +92,9 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @private Add an error bid response for aol
+   * @private
+   * Add an error bid response for aol
+   * 
    * @param {ADTECHResponse} response the response for the bid
    * @param {ADTECHContext} context the context passed from aol
    */
@@ -112,7 +117,9 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @private map a prebid bidrequest to an ADTECH/aol bid request
+   * @private
+   * map a prebid bidrequest to an ADTECH/aol bid request
+   * 
    * @param {Bid} bid the bid request
    * @return {Object} the bid request, formatted for the ADTECH/DAC api
    */
@@ -148,8 +155,8 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @private once ADTECH is loaded, request bids by
-   * calling ADTECH.loadAd
+   * @private
+   * once ADTECH is loaded, request bids by calling ADTECH.loadAd
    */
   function _reqBids() {
     if (!window.ADTECH) {
@@ -165,9 +172,11 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @public call the bids
+   * @public
+   * call the bids
    * this requests the specified bids
    * from aol marketplace
+   * 
    * @param {Object} params
    * @param {Array} params.bids the bids to be requested
    */
