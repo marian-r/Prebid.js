@@ -54,7 +54,8 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @private Add a succesful bid response for aol
+   * @private
+   * Add a succesful bid response for aol
    * @param {ADTECHResponse} response the response for the bid
    * @param {ADTECHContext} context the context passed from aol
    */
@@ -92,7 +93,8 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @private Add an error bid response for aol
+   * @private
+   * Add an error bid response for aol
    * @param {ADTECHResponse} response the response for the bid
    * @param {ADTECHContext} context the context passed from aol
    */
@@ -115,7 +117,9 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @private map a prebid bidrequest to an ADTECH/aol bid request
+   * @private
+   * map a prebid bidrequest to an ADTECH/aol bid request
+   * 
    * @param {Bid} bid the bid request
    * @return {Object} the bid request, formatted for the ADTECH/DAC api
    */
