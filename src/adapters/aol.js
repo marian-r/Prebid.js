@@ -36,8 +36,8 @@ var AolAdapter = function AolAdapter() {
    * @private create a div that we'll use as the
    * location for the AOL unit; AOL will document.write
    * if the div is not present in the document.
-   * @param {String} id to identify the div
-   * @return {String} the id used with the div
+   * @param {string} id to identify the div
+   * @return {string} the id used with the div
    */
   function _dummyUnit(id) {
     var div = d.createElement('DIV');
