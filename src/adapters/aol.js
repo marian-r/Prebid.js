@@ -84,7 +84,6 @@ var AolAdapter = function AolAdapter() {
     bidResponse.creativeId = response.getCreativeId();
     bidResponse.width = response.getAdWidth();
     bidResponse.height = response.getAdHeight();
-
     // add it to the bid manager
     bidmanager.addBidResponse(bid.placementCode, bidResponse);
   }
