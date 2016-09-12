@@ -56,6 +56,7 @@ var AolAdapter = function AolAdapter() {
   /**
    * @private
    * Add a succesful bid response for aol
+   * 
    * @param {ADTECHResponse} response the response for the bid
    * @param {ADTECHContext} context the context passed from aol
    */
@@ -95,6 +96,7 @@ var AolAdapter = function AolAdapter() {
   /**
    * @private
    * Add an error bid response for aol
+   * 
    * @param {ADTECHResponse} response the response for the bid
    * @param {ADTECHContext} context the context passed from aol
    */
@@ -155,8 +157,8 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @private once ADTECH is loaded, request bids by
-   * calling ADTECH.loadAd
+   * @private
+   * once ADTECH is loaded, request bids by calling ADTECH.loadAd
    */
   function _reqBids() {
     if (!window.ADTECH) {
@@ -172,9 +174,11 @@ var AolAdapter = function AolAdapter() {
   }
 
   /**
-   * @public call the bids
+   * @public
+   * call the bids
    * this requests the specified bids
    * from aol marketplace
+   * 
    * @param {Object} params
    * @param {Array} params.bids the bids to be requested
    */
